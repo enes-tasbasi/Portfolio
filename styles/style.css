@@ -14,6 +14,12 @@ body {
     font-size: 20px;
 }
 
+
+.about, .skillset, .projects, .social {
+    float: left;
+    margin: 40px 10%;
+}
+
 /* === Underlining animation for h3 elements === */
 
 h3 {
@@ -29,7 +35,9 @@ h3::after {
     width: 0;
     height: 5px;
     background-color: black;
-    transition: all 150ms ease-in-out;   
+    -moz-transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out;   
+
 }
 
 h3:hover::after {
@@ -143,27 +151,20 @@ nav ul li a:hover::before {
     line-height: 2; 
 }
 
-.about, .skillset, .projects {
-    float: left;
-    margin: 40px 10%;
-}
-
 
 /* Skillset */
 
 .skillset .skillset-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .skillset .skillset-container div {
     background-color: #fff;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 20px;
-    margin: 15px 15px 0 0;
+    margin: 20px 15px 0 0;
     width: 100px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: box-shadow 100ms ease-in;
@@ -224,7 +225,7 @@ nav ul li a:hover::before {
     overflow: hidden;
     position: relative;
     background: #f9f9f9;
-    margin: 30px 30px 0 0;
+    margin: 20px 30px 0 0;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 100ms ease-in;
   }
@@ -295,7 +296,7 @@ nav ul li a:hover::before {
 /* assign description to each project depending on the attr siteName */
 
 .thumbnail[siteName="express"]::before {
-    content: 'Dynamic web app made using ExpressJs, MonogDB, and Handlebars';
+    content: 'Dynamic web app made using ExpressJs, MongoDB, and Handlebars';
 }
 
 .thumbnail[siteName="current"]::before {
@@ -311,5 +312,95 @@ nav ul li a:hover::before {
 }
 
 
+/* === social === */ 
 
-  
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-container a {
+    display: flex;
+    justify-content: center;
+    margin: 20px 15px 0 0;
+    text-decoration: none;
+}
+
+.social-container .fab{
+    font-size: 80px;
+}
+
+.social-container a:hover {
+    
+    animation: shake 800ms linear infinite;
+    -moz-animation:  shake 1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(12deg);
+    }
+    20% {
+        transform: rotate(15deg)
+    }
+    40% {
+        transform: rotate(5deg)
+    }
+    60% {
+        transform: rotate(-5deg)
+    }
+    80% {
+        transform: rotate(-15deg)
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.social-container i.fa-github-square {
+    color: #212121;
+}
+
+.social-container i.fa-linkedin {
+    color: #0073AF;
+}
+
+.social-container i.fa-instagram {
+    background:  -webkit-linear-gradient(45deg, #f7c263 1%,#d42d79 73%,#d42d79 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-container i.fa-codepen {
+    color: black;
+}
+
+.social > a {
+    display: block;
+    margin: 20px 0 10px 20px;
+}
+
+/* == footer == */
+
+.footer {
+    height: 500px;
+    width: 100%;
+    background-color: #56CBF9;
+    float: left;
+    box-shadow: 20px -10px 20px rgba(0,0,0,0.19), 6px -6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer div, .footer .fa {
+    width: fit-content;
+    margin: auto;
+}
+
+.footer > .fa {
+    font-size: 80px;
+}
