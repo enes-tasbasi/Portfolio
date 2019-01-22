@@ -1,0 +1,19 @@
+$main-color: #27ae60;
+$secondary-color: #47e88b;
+
+$header-font: "K2D", "futura", sans-serif;
+$font: "Open Sans", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font;
+}
+
+p,
+span,
+a {
+  font-family: $font;
+}

@@ -2,10 +2,25 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etasbasi/Portfolio.git"
   },
   "author": "Enes Tasbasi",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etasbasi/Portfolio/issues"
+  },
+  "homepage": "https://github.com/etasbasi/Portfolio#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
 }
