@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./dist/imgs/background-pattern.jpg":
+/*!******************************************!*\
+  !*** ./dist/imgs/background-pattern.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"bbb74c00b1602226cf2d00e424978287.jpg\";\n\n//# sourceURL=webpack:///./dist/imgs/background-pattern.jpg?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/styles/index.scss":
 /*!**************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/styles/index.scss ***!
@@ -93,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1,\\nh2,\\nh3,\\nh4,\\nh5 {\\n  font-family: \\\"Open Sans\\\", sans-serif; }\\n\\np,\\nspan,\\na {\\n  font-family: \\\"Open Sans\\\", sans-serif; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../dist/imgs/background-pattern.jpg */ \"./dist/imgs/background-pattern.jpg\"));\n\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  padding: 0;\\n  overflow-x: hidden;\\n  background-image: url(\" + ___CSS_LOADER_URL___0___ + \");\\n  background-repeat: repeat;\\n  background-size: 200px 230px; }\\n  body .container {\\n    background: white; }\\n  body .wrapper {\\n    margin: 30px auto;\\n    box-shadow: 0.5px 3px 6px 3px #a9a9a9;\\n    width: 700px; }\\n\\nh1,\\nh2,\\nh3,\\nh4,\\nh5 {\\n  font-family: \\\"Open Sans\\\", sans-serif; }\\n\\np,\\nspan,\\na {\\n  font-family: \\\"Open Sans\\\", sans-serif; }\\n\\na {\\n  text-decoration: none; }\\n\\np {\\n  font-size: 1.2rem;\\n  margin: 0; }\\n\\n.container {\\n  width: 700px;\\n  margin: auto; }\\n\\n.main {\\n  padding: 10px;\\n  display: grid;\\n  grid-gap: 30px;\\n  justify-items: center;\\n  grid-template-columns: 200px auto; }\\n  .main .left-pane .name-container {\\n    line-height: 3rem;\\n    border: 2px solid #27ae60;\\n    width: 160px;\\n    height: 120px;\\n    padding: 0 10px;\\n    border-radius: 2px; }\\n    .main .left-pane .name-container h1 {\\n      margin: 11px 9px;\\n      font-size: 2.5rem;\\n      font-weight: 130; }\\n  .main .left-pane .social-icons {\\n    display: flex;\\n    justify-content: center;\\n    align-content: center; }\\n    .main .left-pane .social-icons i {\\n      color: #47e88b;\\n      font-size: 3rem;\\n      padding: 8px; }\\n  .main .introduction p {\\n    margin: 0 2px; }\\n\\n.main-pattern {\\n  display: flex;\\n  justify-content: center;\\n  align-content: center;\\n  position: relative;\\n  width: 700px;\\n  margin: auto;\\n  z-index: -1; }\\n  .main-pattern img {\\n    width: 700px;\\n    height: 400px;\\n    width: 100%; }\\n  .main-pattern .project-header {\\n    top: 50%;\\n    left: 50%;\\n    transform: translate(-50%, -50%);\\n    position: absolute;\\n    margin: auto;\\n    text-align: center; }\\n    .main-pattern .project-header h2 {\\n      font-weight: 80;\\n      color: white; }\\n    .main-pattern .project-header i {\\n      color: white;\\n      font-size: 4rem;\\n      cursor: pointer; }\\n\\n.project-container {\\n  position: relative;\\n  margin: 0 10px;\\n  display: grid;\\n  grid-template-columns: auto auto;\\n  grid-template-rows: repeat(4, 200px);\\n  grid-gap: 30px; }\\n  .project-container a img {\\n    border: 1px solid #27ae60;\\n    width: 100%;\\n    height: auto; }\\n\\n@media screen and (max-width: 700px) {\\n  .main-pattern {\\n    display: flex;\\n    justify-content: center;\\n    align-content: center; }\\n    .main-pattern img {\\n      width: 700px;\\n      height: 400px; } }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -106,6 +117,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function escape(url, needQuotes) {\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return '\"' + url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n') + '\"';\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/url-escape.js?");
 
 /***/ }),
 
